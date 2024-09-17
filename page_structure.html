@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Image Hub</h1>
+        </div>
+    </header>
+    <main class="container">
+        <section id="upload-section">
+            <div id="upload-area">
+                <input type="file" id="file-input" accept="image/*" multiple>
+                <i class="fas fa-cloud-upload-alt"></i>
+                <p>Click or drag images here to upload</p>
+            </div>
+        </section>
+        <section id="gallery-section">
+            <div id="image-count"></div>
+            <div id="image-container"></div>
+        </section>
+    </main>
+    <div id="lightbox">
+        <span id="close-lightbox">&times;</span>
+        <div id="lightbox-content">
+            <img id="lightbox-image" src="" alt="Lightbox Image">
+        </div>
+    </div>
+    <div id="upload-progress-popup" class="popup">
+        <div class="popup-content">
+            <h2>Uploading Images</h2>
+            <div id="progress-bar-container">
+                <div id="progress-bar"></div>
+            </div>
+            <p id="progress-text">0% Complete</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
